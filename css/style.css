@@ -1,0 +1,67 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: #f56c42;
+	overflow-x: hidden;
+}
+.circle_1{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: circle_1 5s infinite;
+	display: inline-block;
+}
+.circle_2{
+	width: 100px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	animation: circle_2 5s infinite;
+	display: inline-block;
+}
+.circle_3{
+	width: 100px;
+	position: absolute;
+	animation: circle_3 5s infinite;
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+}
+.circle_4{
+	width: 100px;
+	position: absolute;
+	animation: circle_4 5s infinite;
+	display: inline-block;
+	bottom: 0;
+	right: 0;
+}
+
+@keyframes circle_1 {
+	0%{top: 0; left: 0; transform: rotate(0deg); opacity: 0;}
+	25%{top: 25%; left: 25%; transform: rotate(90deg); opacity: 1}
+	75%{top: 43%; left: 43%; transform: rotate(180deg); opacity: 1; width: 100px;}
+	75%{top: 43%; left: 43%; transform: rotate(180deg); opacity: 1; width: 100px;}
+	100%{top: 43%; left: 43%; transform: rotate(360deg); opacity: 1; width: 200px;}
+}
+@keyframes circle_2 {
+	0%{top: 0; left: 100%; transform: rotate(0deg); opacity: 0}
+	25%{top: 25%; left: 75%; transform: rotate(90deg); opacity: 1}
+	75%{top: 43%; left: 43%; transform: rotate(180deg); opacity: 0.5;}
+	76%{top: 43%; left: 43%; transform: rotate(180deg); opacity: 0;}
+	100%{top: 43%; left: 43%; transform: rotate(360deg); opacity: 0;}
+}
+@keyframes circle_3 {
+	0%{bottom: 0; left: 0; transform: rotate(0deg); opacity: 0}
+	25%{bottom: 25%; left: 25%; transform: rotate(90deg); opacity: 1}
+	75%{bottom: 43%; left: 43%; transform: rotate(180deg); opacity: 0.5;}
+	76%{bottom: 43%; left: 43%; transform: rotate(180deg); opacity: 0;}
+	100%{bottom: 43%; left: 43%; transform: rotate(360deg); opacity: 0;}
+}
+@keyframes circle_4 {
+	0%{bottom: 0; left: 100%; transform: rotate(0deg); opacity: 0}
+	25%{bottom: 25%; left: 75%; transform: rotate(90deg); opacity: 1}
+	75%{bottom: 43%; left: 43%; transform: rotate(180deg); opacity: 0.5;}
+	76%{bottom: 43%; left: 43%; transform: rotate(180deg); opacity: 0;}
+	100%{bottom: 43%; left: 43%; transform: rotate(360deg); opacity: 0;}
+}
